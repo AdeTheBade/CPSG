@@ -20,6 +20,7 @@ All 91 UN COP policy documents used as source material are included in this repo
 ## Setup Instructions
 
 ### 1. Clone the Repository
+```bash
 git clone <repository-url>
 
 cd <repository-name>
