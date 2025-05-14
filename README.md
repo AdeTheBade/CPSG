@@ -27,18 +27,20 @@ cd Climate-Policy-Scenario-Generation
 ```
 
 ### 2. Set Up Virtual Environment
+```bash
 python -m venv .venv
 
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
+```
 ### 3. Install Dependencies
+```bash
 pip install -r requirements.txt
-
+```
 ### 4. Install and Run Ollama
 Install Ollama: Follow the instructions at Ollama's official website.
 
 Pull the required models:
-
+```bash
 ollama pull llama3.2:3b
 
 ollama pull llama3:latest
@@ -48,11 +50,11 @@ ollama pull mistral:7b
 ollama pull gemma2:2b
 
 ollama pull nomic-embed-text:latest
-
+```
 Start the Ollama server:
-
+```bash
 ollama serve
-
+```
 ### 5. Prepare the Data
 The required data is already included in the repository:
 
@@ -66,13 +68,13 @@ The correlation.py script expects a Compiled evaluation result.csv file, which s
 
 ### 6. Run the Scripts
 Each script can be run with default paths or custom paths using command-line arguments. For example, to extract themes from the UN COP documents, you can run the command below.
-
+```bash
 python theme_extraction_rag.py
-
+```
 Or with custom paths:
-
+```bash
 python theme_extraction_rag.py --pdf-folder /path/to/Subfolders --chroma-dir /path/to/chroma_db
-
+```
 ### Project Workflow
 Theme Extraction: Run theme_extraction_rag.py to extract key themes from the documents.
 
