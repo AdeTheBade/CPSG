@@ -21,7 +21,7 @@ All 91 UN COP policy documents used as source material are included in this repo
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/Climate-Policy-Scenario-Generation.git
+git clone https://github.com/AdeTheBade/Climate-Policy-Scenario-Generation.git
 
 cd Climate-Policy-Scenario-Generation
 ```
