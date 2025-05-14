@@ -21,10 +21,10 @@ All 91 UN COP policy documents used as source material are included in this repo
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/<your-username>/Climate-Policy-Scenario-Generation.git
 
-cd <repository-name>
-
+cd Climate-Policy-Scenario-Generation
+'''
 ### 2. Set Up Virtual Environment
 python -m venv .venv
 
