@@ -4,6 +4,7 @@ langchain-community>=0.0.28
 langchain-core>=0.1.30
 langchain-nomic>=0.0.4
 langchain-ollama>=0.0.1
+langchain-chroma>=0.1.0
 datasets>=2.18.0
 ragas>=0.1.8
 transformers>=4.40.2

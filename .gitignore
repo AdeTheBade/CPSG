@@ -1,0 +1,16 @@
+# Ignore Python virtual environment
+.venv/
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+
+# Ignore datasets
+chroma_db/
+notebooks/
+# Ignore system files
+.DS_Store
+run.ipynb
+
+# Ignore log files
+*.log

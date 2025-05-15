@@ -1,0 +1,54 @@
+[
+    {
+        "query": "Key themes within all the documents, focusing on energy policy, climate adaptation, and mitigation strategies.",
+        "extracted_themes": "Based on the provided context, I can identify some key themes related to energy policy, climate adaptation, and mitigation strategies. However, please note that these themes are not explicitly stated as \"key themes\" in the documents.\n\nFrom the documents, we can infer the following:\n\n1. Energy policy:\n\t* There is no explicit mention of energy policy as a separate theme.\n\t* However, some sections (e.g., section F.4) discuss policies and activities related to climate change, which may indirectly relate to energy policy.\n2. Climate adaptation:\n\t* The documents emphasize the importance of identifying key adaptation needs and developing proposals for priority activities to address these needs.\n\t* Adaptation measures are discussed in relation to vulnerability and adaptation assessment (section F.3).\n\t* Capacity building and policy reform are mentioned as potential adaptation options (section F.14).\n3. Mitigation strategies:\n\t* There is no explicit mention of mitigation strategies as a separate theme.\n\t* However, some sections (e.g., section F.4) discuss policies and activities related to climate change, which may indirectly relate to mitigation efforts.\n\nSome common themes that emerge from the documents include:\n\n1. Vulnerability assessment and adaptation planning\n2. Capacity building and policy reform\n3. Integration of climate change considerations into sectoral policies\n4. Public engagement and participation in decision-making processes\n\nThese themes are not explicitly stated as \"key themes\" but can be inferred from the content of the documents.",
+        "source_documents": [
+            {
+                "source": "/Users/badekale/Documents/Hamoyeew/RAG/Climate-Policy-Scenario-Generation/data/cop_documents/COP7-2/13a04.pdf",
+                "page": 11,
+                "content": "FCCC/CP/2001/13/Add.4\nEnglish\nPage 12\n3.  Identification of key adaptation needs\n13.  Based on this overview and framework, past and current practices for adaptation to\nclimate change and climate vari..."
+            },
+            {
+                "source": "/Users/badekale/Documents/Hamoyeew/RAG/Climate-Policy-Scenario-Generation/data/cop_documents/COP7-2/13a04.pdf",
+                "page": 11,
+                "content": "FCCC/CP/2001/13/Add.4\nEnglish\nPage 12\n3.  Identification of key adaptation needs\n13.  Based on this overview and framework, past and current practices for adaptation to\nclimate change and climate vari..."
+            },
+            {
+                "source": "/Users/badekale/Documents/Hamoyeew/RAG/Climate-Policy-Scenario-Generation/data/cop_documents/COP7-2/13a04.pdf",
+                "page": 9,
+                "content": "FCCC/CP/2001/13/Add.4\nEnglish\nPage 10\n (iii)  To identify key climate-change adaptation measures, based, to the extent\npossible, on vulnerability and adaptation assessment; such measures would\nalso be..."
+            },
+            {
+                "source": "/Users/badekale/Documents/Hamoyeew/RAG/Climate-Policy-Scenario-Generation/data/cop_documents/COP7-2/13a04.pdf",
+                "page": 9,
+                "content": "FCCC/CP/2001/13/Add.4\nEnglish\nPage 10\n (iii)  To identify key climate-change adaptation measures, based, to the extent\npossible, on vulnerability and adaptation assessment; such measures would\nalso be..."
+            }
+        ]
+    },
+    {
+        "query": "All Climate policies themes mentioned in the documents",
+        "extracted_themes": "Based on the provided documents, here are the climate policy themes mentioned:\n\n1. International cooperation\n2. Education\n3. Training\n4. Public awareness, public participation, and public access to information\n5. Sustainable development\n6. Phased approach integrating Article 6 activities into existing climate change programmes and strategies\n7. Promotion of partnerships, networks, and synergies (including between conventions)\n8. Holistic, systematic approach\n\nNote that some themes may overlap or be mentioned under different categories, but these are the distinct themes that can be identified from the provided documents.",
+        "source_documents": [
+            {
+                "source": "/Users/badekale/Documents/Hamoyeew/RAG/Climate-Policy-Scenario-Generation/data/cop_documents/COP2/15a01.pdf",
+                "page": 44,
+                "content": "FCCC/CP/1996/15/Add.1\nEnglish\nPage 45\n(c) Any other information that the Party considers relevant to the achievement of\nthe objective of the Convention and suitable for inclusion in its communication,..."
+            },
+            {
+                "source": "/Users/badekale/Documents/Hamoyeew/RAG/Climate-Policy-Scenario-Generation/data/cop_documents/COP2/15a01.pdf",
+                "page": 44,
+                "content": "FCCC/CP/1996/15/Add.1\nEnglish\nPage 45\n(c) Any other information that the Party considers relevant to the achievement of\nthe objective of the Convention and suitable for inclusion in its communication,..."
+            },
+            {
+                "source": "/Users/badekale/Documents/Hamoyeew/RAG/Climate-Policy-Scenario-Generation/data/cop_documents/COP8/07a01-3.pdf",
+                "page": 25,
+                "content": "FCCC/CP/2002/7/Add.1 \nEnglish \nPage 26 \n \n(c) A phased approach integrating Article 6 activities into existing climate change \nprogrammes and strategies; \n(d) Promotion of partnerships, networks and s..."
+            },
+            {
+                "source": "/Users/badekale/Documents/Hamoyeew/RAG/Climate-Policy-Scenario-Generation/data/cop_documents/COP8/07a01-3.pdf",
+                "page": 25,
+                "content": "FCCC/CP/2002/7/Add.1 \nEnglish \nPage 26 \n \n(c) A phased approach integrating Article 6 activities into existing climate change \nprogrammes and strategies; \n(d) Promotion of partnerships, networks and s..."
+            }
+        ]
+    }
+]

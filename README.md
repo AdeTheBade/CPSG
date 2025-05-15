@@ -5,7 +5,7 @@ This is the code that accompanies the paper titled **"AI-Driven Climate Policy S
 ## Repository Structure
 - `data/`: Contains input prompts, the UN COP documents and generated outputs.
 - `results/`: Compiled evaluation metrics and generated evaluation outputs.
-- `theme_extraction_rag.py`: Extracts key climate policy themes from the documents.
+- `theme_extraction.py`: Extracts key climate policy themes from the documents.
 - `scenario_generation.py`: Generates climate policy scenarios for Sub-Saharan Africa using a RAG pipeline.
 - `automated_evaluation.py`: Evaluates the generated scenarios using the RAGAS framework.
 - `follow_up_generated_response.py`: Generates follow-up responses (measurable outcomes, key drivers, milestones) for the scenarios.
@@ -15,7 +15,7 @@ This is the code that accompanies the paper titled **"AI-Driven Climate Policy S
 
 ## Dataset Access
 
-All 91 UN COP policy documents used as source material are included in this repository under: "data/cop_documents"
+All 94 UN COP policy documents used as source material are included in this repository under: "data/cop_documents"
 
 ## Setup Instructions
 
@@ -37,7 +37,7 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 ### 4. Install and Run Ollama
-Install Ollama: Follow the instructions at Ollama's official website.
+Install Ollama: Follow the instructions at Ollama's official website (https://ollama.com)
 
 Pull the required models:
 ```bash
@@ -69,14 +69,14 @@ The correlation.py script expects a Compiled evaluation result.csv file, which s
 ### 6. Run the Scripts
 Each script can be run with default paths or custom paths using command-line arguments. For example, to extract themes from the UN COP documents, you can run the command below.
 ```bash
-python theme_extraction_rag.py
+python theme_extraction.py
 ```
 Or with custom paths:
 ```bash
-python theme_extraction_rag.py --pdf-folder /path/to/Subfolders --chroma-dir /path/to/chroma_db
+python theme_extraction.py --queries "Query 1" "Query 2" "Query 3"
 ```
 ### Project Workflow
-Theme Extraction: Run theme_extraction_rag.py to extract key themes from the documents.
+Theme Extraction: Run theme_extraction.py to extract key themes from the documents.
 
 Scenario Generation: Run scenario_generation.py to generate climate policy scenarios and save them to a CSV file.
 
