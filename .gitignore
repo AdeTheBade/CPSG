@@ -8,6 +8,7 @@ __pycache__/
 # Ignore datasets
 chroma_db/
 notebooks/
+chroma_db1/
 # Ignore system files
 .DS_Store
 run.ipynb
