@@ -33,14 +33,14 @@ def compute_correlations(input_file):
 
     # Define columns for correlation
     corr_columns = [
-        'Gemma2_2b_faithfulness', 
-        'Mistral_7b_faithfulness',
+        #'Gemma2_2b_faithfulness', 
+        #'Mistral_7b_faithfulness',
         #'Gemma2_2b_answer_relevancy', 
-        #'Mistral_7b_answer_relevancy',
+        'Mistral_7b_answer_relevancy',
         #'Gemma2_2b_context_utilization', 
         #'Mistral_7b_context_utilization',
         #'Human_faithfulness', 
-        #'Human_answer_relevancy', 
+        'Human_answer_relevancy', 
         #'Human_context_utilization'
     ]
 
@@ -59,14 +59,14 @@ def compute_correlations(input_file):
 
     # Extract and print key correlations
     key_metrics = [
-        ('Gemma2_2b_faithfulness', 'Mistral_7b_faithfulness'),
+        #('Gemma2_2b_faithfulness', 'Mistral_7b_faithfulness'),
         #('Gemma2_2b_answer_relevancy', 'Mistral_7b_answer_relevancy'),
         #('Gemma2_2b_context_utilization', 'Mistral_7b_context_utilization'),
         #('Human_faithfulness', 'Gemma2_2b_faithfulness'),
         #('Human_answer_relevancy', 'Gemma2_2b_answer_relevancy'),
         #('Human_context_utilization', 'Gemma2_2b_context_utilization'),
         #('Human_faithfulness', 'Mistral_7b_faithfulness'),
-        #('Human_answer_relevancy', 'Mistral_7b_answer_relevancy'),
+        ('Human_answer_relevancy', 'Mistral_7b_answer_relevancy'),
         #('Human_context_utilization', 'Mistral_7b_context_utilization')
     ]
 
@@ -79,7 +79,7 @@ def compute_correlations(input_file):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Compute correlations for evaluation metrics.")
-    parser.add_argument("--input-file", default="results/Compiled evaluation result.csv", help="Path to the input CSV file containing evaluation results.")
+    parser.add_argument("--input-file", default="results/Compiled_evaluation_result.csv", help="Path to the input CSV file containing evaluation results.")
     args = parser.parse_args()
 
     base_dir = os.path.dirname(os.path.abspath(__file__)) if '__file__' in globals() else os.getcwd()

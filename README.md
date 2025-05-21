@@ -1,13 +1,14 @@
 # Climate-Policy-Scenario-Generation
 
-This is the code that accompanies the paper titled **"AI-Driven Climate Policy Scenario Generation for Sub-Saharan Africa"** by *Rafiu Adekoya Badekale* and *Dr. Adewale Akinfaderin*. The project explores the use of large language models (LLMs) for generating and evaluating climate policy scenarios tailored to Sub-Saharan Africa (SSA). This research was fully funded by Hamoye Foundation, a 501(c)(3) organization.
+This is the code that accompanies the paper titled **"AI-Driven Climate Policy Scenario Generation for Sub-Saharan Africa"** by *Rafiu Adekoya Badekale* and *Dr. Adewale Akinfaderin*. The project explores the use of large language models (LLMs) for generating and evaluating climate policy scenarios tailored to Sub-Saharan Africa (SSA). This research is fully funded by Hamoye Foundation, a 501(c)(3) organization.
 
 ## Repository Structure
-- `data/`: Contains input prompts, the UN COP documents and generated outputs.
+- `data/`: Contains input prompts, the UN COP documents and generated responses.
 - `results/`: Compiled evaluation metrics and generated evaluation outputs.
 - `theme_extraction.py`: Extracts key climate policy themes from the documents.
 - `scenario_generation.py`: Generates climate policy scenarios for Sub-Saharan Africa using a RAG pipeline.
-- `automated_evaluation.py`: Evaluates the generated scenarios using the RAGAS framework.
+- `automated_evaluation_mistral.py`: Evaluates the generated scenarios using the RAGAS framework with mistral-7B.
+- `automated_evaluation_gemma2.py`: Evaluates the generated scenarios using the RAGAS framework with gemma2-2B.
 - `follow_up_generated_response.py`: Generates follow-up responses (measurable outcomes, key drivers, milestones) for the scenarios.
 - `correlation.py`: Computes mean scores, standard deviations, and Spearman rank correlations for evaluation metrics.
 - `utils.py`: Utility functions for loading PDFs.

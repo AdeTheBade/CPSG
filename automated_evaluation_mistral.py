@@ -38,7 +38,7 @@ def evaluate_scenarios(input_file, output_dir):
     llm_mistral = OllamaLLM(
         model="mistral:7b",
         verbose=False,
-        timeout=30,
+        timeout=600,
         num_ctx=5000,
         disable_streaming=False,
         temperature=0
@@ -58,7 +58,7 @@ def evaluate_scenarios(input_file, output_dir):
             metrics=[Faithfulness(), ContextUtilization(), AnswerRelevancy()],
             llm=llm_mistral,
             embeddings=embeddings_nomic,
-            run_config=RunConfig(max_workers=16, timeout=30, max_retries=5, max_wait=20, log_tenacity=True)
+            run_config=RunConfig(max_workers=16, timeout=600, max_retries=5, max_wait=20, log_tenacity=True)
         )
         scores = {metric: result_mistral[metric][0] if result_mistral[metric] else "NaN" for metric in result_mistral._scores_dict.keys()}
         evaluation_results.append({
@@ -72,7 +72,7 @@ def evaluate_scenarios(input_file, output_dir):
 
     # Save results
     os.makedirs(output_dir, exist_ok=True)
-    output_file = os.path.join(output_dir, "evaluation_results_mistral.csv")
+    output_file = os.path.join(output_dir, "evaluation_result_mistral.csv")
     header = ["Question", "Answer", "Contexts", "Faithfulness", "ContextUtilization", "AnswerRelevancy"]
     with open(output_file, mode="w", newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(file, fieldnames=header)
@@ -81,9 +81,9 @@ def evaluate_scenarios(input_file, output_dir):
     print(f"All evaluation results saved to {output_file}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Evaluate pre-generated climate policy scenarios using LLMs.")
-    parser.add_argument("--input-file", default="notebooks/generated_responses.csv", help="Path to the input CSV file with pre-generated responses.")
-    parser.add_argument("--output-dir", default="results2", help="Path to save evaluation results.")
+    parser = argparse.ArgumentParser(description="Evaluate pre-generated climate policy scenarios using mistral-7B.")
+    parser.add_argument("--input-file", default="data/generated_responses.csv", help="Path to the input CSV file with pre-generated responses.")
+    parser.add_argument("--output-dir", default="results", help="Path to save evaluation results.")
     args = parser.parse_args()
 
     base_dir = os.path.dirname(os.path.abspath(__file__)) if '__file__' in globals() else os.getcwd()

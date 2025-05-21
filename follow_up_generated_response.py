@@ -90,8 +90,8 @@ def generate_follow_up_responses(input_file, output_file):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate follow-up responses for climate policy scenarios.")
-    parser.add_argument("--input-file", default="notebooks/generated_responses_rea.csv", help="Path to the input CSV file containing scenarios.")
-    parser.add_argument("--output-file", default="results/follow_up.csv", help="Path to save the output CSV file.")
+    parser.add_argument("--input-file", default="data/generated_responses.csv", help="Path to the input CSV file containing scenarios.")
+    parser.add_argument("--output-file", default="results/follow_up_prompt_responses.csv", help="Path to save the output CSV file.")
     args = parser.parse_args()
 
     base_dir = os.path.dirname(os.path.abspath(__file__)) if '__file__' in globals() else os.getcwd()

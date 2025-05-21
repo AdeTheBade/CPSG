@@ -62,7 +62,7 @@ def extract_themes(pdf_folder_path, chroma_persist_dir, queries):
             for doc in response["source_documents"]
         ]
 
-        # Print results for user feedback
+        # Print results
         print("Extracted Themes:")
         print(extracted_themes)
         print("\nSource Documents:")
