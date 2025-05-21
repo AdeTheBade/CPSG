@@ -80,7 +80,7 @@ Theme Extraction: Run theme_extraction.py to extract key themes from the documen
 
 Scenario Generation: Run scenario_generation.py to generate climate policy scenarios and save them to a CSV file.
 
-Automated Evaluation: Run automated_evaluation.py to evaluate the scenarios using RAGAS metrics and save the results.
+Automated Evaluation: Run automated_evaluation_gemma2.py or automated_evaluation_mistral.py to evaluate the scenarios using RAGAS metrics and save the results.
 
 Correlation Analysis: Run correlation.py to compute correlations between evaluation metrics.
 
